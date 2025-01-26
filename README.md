@@ -37,17 +37,13 @@ bash
 Copy
 pip install -r requirements.txt
 
-## Environment Setup: Create a .env file in the root directory of your project and add your Hugging Face API Token:
-
-bash
-Copy
+## Environment Setup: 
+Create a .env file in the root directory of your project and add your
+Hugging Face API Token:
 HUGGINGFACE_API_TOKEN=your_huggingface_api_token
 Run the Application: You can now run the Streamlit app:
-
-bash
-Copy
 streamlit run app.py
-This will open the app in your default web browser.
+
 
 ## How it Works
 Upload an Image: Once the app is running, you can upload an image using the file uploader in the Streamlit sidebar.
@@ -61,14 +57,13 @@ Text-to-Speech: The refined description is then passed to a Hugging Face model (
 Progress Indicator: A progress bar is shown while the models work on the input, ensuring the user knows the app is processing the image and generating the content.
 
 ## File Structure
-graphql
-Copy
 Image-Voice-AI/
 ├── app.py                # Main application logic and UI (Streamlit)
 ├── custom.py             # Custom CSS for Streamlit UI styling
 ├── requirements.txt      # Python dependencies
 ├── .env                  # Environment variables (e.g., Hugging Face API token)
 ├── img/                  # Image assets for the app (e.g., logo)
+
 
 ## Customization
 CSS Customization: The app uses custom CSS (defined in custom.py) to adjust padding and margins for better layout management.
@@ -77,7 +72,7 @@ Hugging Face Models: The app leverages the Hugging Face pipeline for various NLP
 ## Contribution
 Feel free to fork the repository and submit issues or pull requests. Contributions are welcome!
 
-## Fork the repository.
+## Fork the repository
 Create a new branch.
 Make your changes.
 Open a pull request.
